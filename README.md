@@ -1,1 +1,2 @@
-# raspberry-pineapple
+# csc307-react-app
+
