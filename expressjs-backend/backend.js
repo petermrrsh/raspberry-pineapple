@@ -1,5 +1,6 @@
 const cors = require('cors');
 const express = require('express');
+const fs = require('fs');
 const app = express();
 const port = 5005;
 
@@ -90,6 +91,7 @@ function generateRandomUniqueID() {
 
 function addUser(user){
     users['users_list'].push(user);
+    fs.appendFileSync("users.txt", JSON.stringify(user) + "\n");
     return user;
 }
 
