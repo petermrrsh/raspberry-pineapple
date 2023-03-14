@@ -6,6 +6,7 @@ import cp_logo from "./calpoly.png"
 import { useNavigate } from 'react-router-dom';
 
 const ip = "192.168.1.45";
+//const ip = "localhost"
 
 async function fetchAll(){
   try {
@@ -75,6 +76,7 @@ function MyApp() {
        setCharacters([...characters, result.data]);
     }
     //navigate("http://www.calpoly.edu");
+    window.location.href = 'http://www.calpoly.edu'; // Navigate to google.com
    });
  }
 
